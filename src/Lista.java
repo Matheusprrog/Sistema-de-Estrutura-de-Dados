@@ -19,7 +19,7 @@ public class Lista {
                 System.out.println("==================================");
                 System.out.println("     Lista - Lista de Compras     ");
                 System.out.println("==================================");
-                System.out.println(" 1 - Adcionar Produto");
+                System.out.println(" 1 - Adicionar Produto");
                 System.out.println(" 2 - remover Produto");
                 System.out.println(" 3 - Mostrar Proudtos");
                 System.out.println(" 4 - Procurar Produtos");
@@ -57,7 +57,7 @@ public class Lista {
         switch (opcao) {
 
             case 1:
-                Lista.adcionarProdutos(scanner, produtos);
+                Lista.adicionarProdutos(scanner, produtos);
                 break;
 
 
@@ -80,7 +80,7 @@ public class Lista {
     }
 
 
-    public static void adcionarProdutos(Scanner scanner, ArrayList<String> produtos) {
+    public static void adicionarProdutos(Scanner scanner, ArrayList<String> produtos) {
 
         boolean continuarAddProd = true;
 
@@ -89,10 +89,10 @@ public class Lista {
             String addProd;
 
             while (true) {
-                System.out.println("Digite o nome do produto que deseja adcionar: ");
+                System.out.println("Digite o nome do produto que deseja adicionar: ");
                 addProd = scanner.nextLine();
                 if (produtos.contains(addProd)) {
-                    System.out.println("Esse produto já existe na lista! Tente novamnte!");
+                    System.out.println("Esse produto já existe na lista! Tente novamente!");
                     System.out.println(" ");
                 } else {
                     break;
@@ -100,13 +100,13 @@ public class Lista {
             }
 
             produtos.add(addProd);
-            System.out.println("Produto Adcionado! ");
+            System.out.println("Produto Adicionado! ");
 
 
             boolean escolhaValida = false;
             while (!escolhaValida) {
                 try {
-                    System.out.println(" [1] Adcionar mais produtos ");
+                    System.out.println(" [1] Adicionar mais produtos ");
                     System.out.println(" [2] Voltar ao menu");
                     System.out.println(" escolha: ");
                     int escolha = scanner.nextInt();

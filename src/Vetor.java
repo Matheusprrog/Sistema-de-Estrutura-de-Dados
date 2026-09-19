@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Vetor {
 
-    public static void adcionarNotas(Scanner scanner) {
+    public static void adicionarNotas(Scanner scanner) {
 
         double[] notas = new double[5];
         double total = 0.00;

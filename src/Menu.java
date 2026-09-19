@@ -56,7 +56,7 @@ public class Menu {
         switch (opcao) {
 
             case 1:
-                Vetor.adcionarNotas(scanner);
+                Vetor.adicionarNotas(scanner);
                 break;
 
 
